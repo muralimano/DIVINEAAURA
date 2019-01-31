@@ -9,6 +9,11 @@
 
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <!--<item name="windowNoTitle">true</item>-->
+    </style>
+
     <style name="LoginSignUp1Input">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -50,6 +55,5 @@
     <style name="ButtonYellow" parent="@android:style/Widget.Button">
         <item name="android:background">@color/button_yellow</item>
     </style>
-
 
 </resources>

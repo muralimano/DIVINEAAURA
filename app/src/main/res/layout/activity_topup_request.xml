@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="@color/loginSignup1Background"
+    tools:context=".TopupRequest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOPUP REQUEST"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Invester ID" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Name" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Email Id" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Mobile Number" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Bank Name" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Amount" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Ref Number" />
+
+        <EditText
+            style="@style/LoginSignUp1Input"
+            android:hint="Comments" />
+
+
+        <Button
+            android:id="@+id/btntopupsub"
+            style="@style/ButtonOrange"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+
+    <item android:title="TopUp">
+        <menu>
+            <item
+                android:id="@+id/topuprequest"
+                android:icon="@drawable/ic_topupaccount"
+                android:title="Topup Request" />
+            <item
+                android:id="@+id/topuprequeststatus"
+                android:icon="@drawable/ic_request_status"
+                android:title="Topup Request Status" />
+            <item
+                android:id="@+id/topupledger"
+                android:icon="@drawable/ic_bookledger"
+                android:title="Topup Ledger" />
+        </menu>
+    </item>
+    <item android:title="Wallet">
+        <menu>
+            <item
+                android:id="@+id/walletrequest"
+                android:icon="@drawable/ic_wallet_black"
+                android:title="Wallet Request" />
+            <item
+                android:id="@+id/walletrequeststatus"
+                android:icon="@drawable/ic_request_status"
+                android:title="Wallet Request Status" />
+            <item
+                android:id="@+id/walletledger"
+                android:icon="@drawable/ic_bookledger"
+                android:title="Wallet Ledger" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/complaint"
+        android:icon="@drawable/ic_question_complaint"
+        android:title="Complaint" />
+    <item
+        android:id="@+id/Loginsignup"
+        android:title="Login" />
+
+</menu>
