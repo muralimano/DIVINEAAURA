@@ -19,9 +19,7 @@ public class Dashboard extends Fragment {
     //    static String[][] tablecolmdata = {
 //            {"1", "sabari raja", "sanjay88@gmail.com", "8015203449", "345678", "icic bank", "20000", "fdxgcvb", "Approved"},
 //            {"2", "sabari raja", "sanjay88@gmail.com", "8015203449", "234567", "icic bank", "4000", "sgf", "Process"},
-//            {"3", "sabari raja", "sanjay88@gmail.com", "8015203449", "12345", "icic bank", "1000", "interest", "Approved"},
-//
-//    };
+//            {"3", "sabari raja", "sanjay88@gmail.com", "8015203449", "12345", "icic bank", "1000", "interest", "Approved"},};
 //    static String[] spaceProbeHeaders = {"ID", "Name", "Email", "Mobile", "Reference", "No", "Bank", "Amount", "Comments", "Status"};
 
 
@@ -30,12 +28,12 @@ public class Dashboard extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         //   mlistview = getActivity().findViewById(R.id.toplistview);
- //       ListView mlistview = (ListView) getActivity().findViewById(R.id.toplistview);
+        //   ListView mlistview = (ListView) getActivity().findViewById(R.id.toplistview);
 
         View rootview = inflater.inflate(R.layout.activity_dashboard, container, false);
 //
 //
-//               4800, "Test comments", "Activie"));
+//         4800, "Test comments", "Activie"));
 //
 //        TopupData data1 = new TopupData(1, "murali", "murali@oceansoftwares.com", "9876543210", 147, "State Bank",
 //                4800, "Test comments", "Activie");
