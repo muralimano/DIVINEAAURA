@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.topuprequeststatus:
-                Toast.makeText(MainActivity.this, "You Clicked topup", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TopupRequestStatus()).addToBackStack(null).commit();
                 break;
 
             case R.id.topupledger:
-                Toast.makeText(MainActivity.this, "Top up Ledger", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TopupLedger()).addToBackStack(null).commit();
                 break;
 
             case R.id.walletrequest:

@@ -1,9 +1,9 @@
 package com.oceansoftwares.divineaaura;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,17 +13,16 @@ import com.oceansoftwares.divineaaura.entities.TopupData;
 
 import java.util.ArrayList;
 
-public class Dashboard extends Fragment {
+
+public class TopupLedger extends Fragment {
     ListView mlistview;
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         mlistview = getActivity().findViewById(R.id.toplistview);
-
-        View rootview = inflater.inflate(R.layout.activity_dashboard, container, false);
-
+        View rootview = inflater.inflate(R.layout.fragment_topup_ledger, container, false);
         ListView mlistview = (ListView) rootview.findViewById(R.id.toplistview);
 
         TopupData data1 = new TopupData(1, "murali", "murali@oceansoftwares.com", "9876543210", 147, "State Bank",
@@ -50,7 +49,6 @@ public class Dashboard extends Fragment {
         mlistview.addHeaderView(header);
 
         mlistview.setAdapter(dashboardadapter);
-
         return rootview;
 
     }

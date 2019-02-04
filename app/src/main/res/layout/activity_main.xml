@@ -4,20 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <include layout="@layout/activity_nav_menu" />
-    <!--<LinearLayout-->
-        <!--android:id="@+id/tableid4"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/dashlay2"-->
-        <!--android:orientation="vertical">-->
 
-        <!--<ListView-->
-            <!--android:id="@+id/toplistview"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_alignParentStart="true"-->
-            <!--android:layout_alignParentTop="true">-->
-        <!--</ListView>-->
-    <!--</LinearLayout>-->
+    <include layout="@layout/activity_nav_menu" />
+
+    <LinearLayout
+        android:id="@+id/tableid4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashlay2"
+        android:orientation="vertical"></LinearLayout>
 </RelativeLayout>

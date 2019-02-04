@@ -7,66 +7,73 @@
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     android:background="@color/loginSignup1Background"
     tools:context=".WalletRequest">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WALLET REQUEST"
-            android:layout_marginLeft="10dp"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Invester ID" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="WALLET REQUEST"
+                android:textStyle="bold" />
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Name" />
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Invester ID" />
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Email Id" />
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Name" />
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Mobile Number" />
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Email Id" />
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Bank Name" />
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Mobile Number" />
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Amount" />
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Bank Name" />
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Ref Number" />
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Amount" />
 
-        <EditText
-            style="@style/LoginSignUp1Input"
-            android:hint="Comments" />
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Ref Number" />
+
+            <EditText
+                style="@style/LoginSignUp1Input"
+                android:hint="Comments" />
 
 
-        <Button
-            android:id="@+id/btntopupsub"
-            style="@style/ButtonOrange"
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="46dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:text="Submit"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
-
+            <Button
+                android:id="@+id/btntopupsub"
+                style="@style/ButtonOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

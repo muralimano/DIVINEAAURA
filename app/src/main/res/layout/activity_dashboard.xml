@@ -28,21 +28,19 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:background="@drawable/background_bluesdsd"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="60px"
                         android:text="CAPTIAL"
                         android:textColor="#fff" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40px"
+                        android:paddingTop="10dp"
                         android:text="RS 5000"
                         android:textColor="#fff" />
                 </LinearLayout>
@@ -58,21 +56,19 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:background="@drawable/background_purple"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="60px"
                         android:text="TOTAL RETURN"
                         android:textColor="#fff" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40px"
+                        android:paddingTop="10dp"
                         android:text="RS 4000.00"
                         android:textColor="#fff" />
                 </LinearLayout>
@@ -103,21 +99,19 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:background="@drawable/background_red"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="60px"
                         android:text="CUR RETURN"
                         android:textColor="#fff" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40px"
+                        android:paddingTop="10dp"
                         android:text="RS 4000.00"
                         android:textColor="#fff" />
                 </LinearLayout>
@@ -133,13 +127,12 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:background="@drawable/background_blue"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="70px"
                         android:text="TOP REQUEST : 3"
                         android:textColor="#fff"
                         android:textSize="10sp" />
@@ -147,8 +140,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="40px"
+                        android:paddingTop="10dp"
                         android:text="WITHDRAW REQUEST : 1"
                         android:textColor="#fff"
                         android:textSize="10sp" />
@@ -162,128 +154,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dashlay2"
+        android:layout_margin="5dp"
         android:orientation="vertical">
 
-
-        <TableLayout
+        <ListView
+            android:id="@+id/toplistview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="30dp">
-
-            <TableRow
-                android:background="@drawable/background_blue"
-                android:outlineAmbientShadowColor="@color/colorPrimary">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Id"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Refer No"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Bank"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Amount"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Comments"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Status"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
-
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/table_colm_style"
-                    android:gravity="center"
-                    android:text="murali" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/table_colm_style"
-                    android:gravity="center"
-                    android:text="147" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/table_colm_style"
-                    android:gravity="center"
-                    android:text="State bank" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/table_colm_style"
-                    android:gravity="center"
-                    android:text="58000" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/table_colm_style"
-                    android:gravity="center"
-                    android:text="test test" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/table_colm_style"
-                    android:gravity="center"
-                    android:text="Active" />
-
-            </TableRow>
-
-        </TableLayout>
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"></ListView>
 
     </LinearLayout>
 </RelativeLayout>

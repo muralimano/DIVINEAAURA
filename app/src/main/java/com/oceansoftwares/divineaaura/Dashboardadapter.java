@@ -12,13 +12,14 @@ import com.oceansoftwares.divineaaura.entities.TopupData;
 import java.util.ArrayList;
 import java.util.List;
 
-class Toplistadapter extends ArrayAdapter<TopupData> {
+class Dashboardadapter extends ArrayAdapter<TopupData> {
 
-    private static  final String TAG = "Toplistadapter";
+    private static final String TAG = "Dashboardadapter";
     private Context mcontext;
     int mresource;
+    LayoutInflater inflater;
 
-    public Toplistadapter(Context context, int resource, ArrayList<TopupData> objects) {
+    public Dashboardadapter(Context context, int resource, ArrayList<TopupData> objects) {
         super(context, resource, objects);
 
         mcontext = context;
@@ -27,7 +28,12 @@ class Toplistadapter extends ArrayAdapter<TopupData> {
 
 
     @Override
-    public View getView(int position, View convertView,ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+//            if (convertView == null){
+//                inflater= (LayoutInflater) mcontext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//    convertView = inflater.inflate(R.layout.activity_dashboard,null);
+//            }
 
         int id = getItem(position).getId();
         String name = getItem(position).getName();
@@ -39,9 +45,9 @@ class Toplistadapter extends ArrayAdapter<TopupData> {
         String comments = getItem(position).getComments();
         String status = getItem(position).getStatus();
 
-        TopupData topupData = new TopupData(id,name,email,phone,referenceno,bank,amount,comments,status);
+        TopupData topupData = new TopupData(id, name, email, phone, referenceno, bank, amount, comments, status);
         LayoutInflater inflater = LayoutInflater.from(mcontext);
-        convertView = inflater.inflate(mresource, parent, false );
+        convertView = inflater.inflate(mresource, parent, false);
 
 
         TextView tvname = convertView.findViewById(R.id.toptvid);
@@ -51,7 +57,7 @@ class Toplistadapter extends ArrayAdapter<TopupData> {
         TextView tvcomments = convertView.findViewById(R.id.toptvcomments);
         TextView tvstatus = convertView.findViewById(R.id.toptvstatus);
 
-        tvname.setText(name);
+        tvname.setText(Integer.toString(id));
         tvreferenceno.setText(Integer.toString(referenceno));
         tvbank.setText(bank);
         tvamount.setText(Integer.toString(amount));
